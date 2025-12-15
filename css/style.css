@@ -840,16 +840,27 @@ p.header-p {
   }
 }
 
-@media (max-width: 768px) {
-  .ig-profile img.background {
-    position: absolute; /* WAJIB */
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 400px;
-  }
+@media (max-width: 767px) {
+	.navbar-nav a:hover {
+		transform: scale(1) translateY(-3px);
+	}
+	.member-flex-slider {
+		height: 1150px;
+	}
+	.ig-profile .container .row .col-lg-5 .row {
+		justify-content: center;
+	}
+	.ig-profile .container .row .col-sm-12 {
+		margin-bottom: 65px;
+	}
+	.ig-profile img.background {
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 400px;
+	}
 }
 
 
@@ -1023,5 +1034,6 @@ p.header-p {
     height: 1600px;
   }
 }
+
 
 
