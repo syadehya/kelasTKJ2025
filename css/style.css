@@ -26,8 +26,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: scroll; */
+  background-attachment: scroll;
   height: 100vh;
+  min-height: 500px;
 }
 
 .jumbotron .container {
@@ -841,28 +842,27 @@ p.header-p {
 }
 
 @media (max-width: 767px) {
-	.navbar-nav a:hover {
-		transform: scale(1) translateY(-3px);
-	}
-	.member-flex-slider {
-		height: 1150px;
-	}
-	.ig-profile .container .row .col-lg-5 .row {
-		justify-content: center;
-	}
-	.ig-profile .container .row .col-sm-12 {
-		margin-bottom: 65px;
-	}
-	.ig-profile img.background {
-		right: 0;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		width: 400px;
-	}
+  .navbar-nav a:hover {
+    transform: scale(1) translateY(-3px);
+  }
+  .member-flex-slider {
+    height: 1150px;
+  }
+  .ig-profile .container .row .col-lg-5 .row {
+    justify-content: center;
+  }
+  .ig-profile .container .row .col-sm-12 {
+    margin-bottom: 65px;
+  }
+  .ig-profile img.background {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+  }
 }
-
 
 @media (max-width: 580px) {
   .ig-profile {
@@ -900,7 +900,9 @@ p.header-p {
 
 @media (max-width: 480px) {
   .jumbotron {
-    background-image: url(../image/jumbotron.jpg);
+    background-image: url(../image/jumbotron1.jpg);
+    /* background-attachment: scroll !important; */
+    min-height: 600px;
   }
   .jumbotron h1 {
     font-size: 30px;
@@ -1034,6 +1036,3 @@ p.header-p {
     height: 1600px;
   }
 }
-
-
-
